@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">lesson_2</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="split">/</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="multiply">*</string>
+    <string name="subtract">-</string>
+    <string name="_9">9</string>
+    <string name="_8">8</string>
+    <string name="_7">7</string>
+    <string name="_0">0</string>
+    <string name="dot">.</string>
+    <string name="augment">+</string>
+    <string name="discard">C</string>
+    <string name="delete"><![CDATA[<]]></string>
+    <string name="equally">=</string>
+    <string name="toast_help">Строка пуста!</string>
+    <string name="toast_help_2">Введите значения!</string>
+    <string name="toast_help_3">Арифметическая ошибка!</string>
+
 </resources>
