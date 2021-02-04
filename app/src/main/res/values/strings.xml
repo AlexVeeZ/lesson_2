@@ -18,4 +18,8 @@
     <string name="discard">C</string>
     <string name="delete"><![CDATA[<]]></string>
     <string name="equally">=</string>
+    <string name="toast_help">Строка пуста!</string>
+    <string name="toast_help_2">Введите значения!</string>
+    <string name="toast_help_3">Арифметическая ошибка!</string>
+
 </resources>
