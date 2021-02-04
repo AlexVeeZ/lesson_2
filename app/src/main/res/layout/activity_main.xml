@@ -55,11 +55,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
+                    style="@style/btn_numbers"
                     android:text="@string/_1"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
                     tools:ignore="ButtonStyle" />
 
                 <Button
@@ -67,11 +64,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
                     android:text="@string/_2"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
+                    style="@style/btn_numbers"
                     tools:ignore="ButtonStyle"
                     android:layout_marginStart="4dp"/>
 
@@ -80,11 +74,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
                     android:text="@string/_3"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
+                    style="@style/btn_numbers"
                     tools:ignore="ButtonStyle"
                     android:layout_marginStart="4dp"/>
 
@@ -93,11 +84,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/orange"
                     android:text="@string/split"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
+                    style="@style/btn_elements"
                     tools:ignore="ButtonStyle"
                     android:layout_marginStart="4dp"/>
             </LinearLayout>
@@ -112,11 +100,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
                     android:text="@string/_4"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
+                    style="@style/btn_numbers"
                     tools:ignore="ButtonStyle" />
 
                 <Button
@@ -124,11 +109,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
+                    style="@style/btn_numbers"
                     android:text="@string/_5"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
                     tools:ignore="ButtonStyle"
                     android:layout_marginStart="4dp"/>
 
@@ -137,11 +119,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
+                    style="@style/btn_numbers"
                     android:text="@string/_6"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
                     tools:ignore="ButtonStyle"
                     android:layout_marginStart="4dp"/>
 
@@ -150,11 +129,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/orange"
                     android:text="@string/multiply"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
+                    style="@style/btn_elements"
                     tools:ignore="ButtonStyle"
                     android:layout_marginStart="4dp"/>
 
@@ -170,11 +146,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
                     android:text="@string/_7"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
+                    style="@style/btn_numbers"
                     tools:ignore="ButtonStyle" />
 
                 <Button
@@ -182,11 +155,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
                     android:text="@string/_8"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
+                    style="@style/btn_numbers"
                     tools:ignore="ButtonStyle"
                     android:layout_marginStart="4dp"/>
 
@@ -195,11 +165,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
                     android:text="@string/_9"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
+                    style="@style/btn_numbers"
                     tools:ignore="ButtonStyle"
                     android:layout_marginStart="4dp"/>
 
@@ -208,11 +175,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/orange"
                     android:text="@string/subtract"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
+                    style="@style/btn_elements"
                     tools:ignore="ButtonStyle"
                     android:layout_marginStart="4dp"/>
 
@@ -228,11 +192,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="4"
-                    android:backgroundTint="@color/blue"
                     android:text="@string/_0"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
+                    style="@style/btn_numbers"
                     tools:ignore="ButtonStyle" />
 
                 <Button
@@ -240,11 +201,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/blue"
                     android:text="@string/dot"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
+                    style="@style/btn_elements"
                     tools:ignore="ButtonStyle"
                     android:layout_marginStart="4dp"/>
 
