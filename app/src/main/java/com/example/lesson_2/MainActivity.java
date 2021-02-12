@@ -4,9 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -19,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_one, btn_two, btn_three, btn_four, btn_five, btn_six, btn_seven, btn_eight, btn_nine, btn_zero,
             btn_dot, btn_split, btn_multiply, btn_subtract, btn_augment,
             btn_discard, btn_delete, btn_equally;
+    private ImageView rateImage;
 
     private double buffer = 0.0;
     private char act;
@@ -36,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
     /*инициализация полей*/
     private void initViews() {
+        //ImageView
+        rateImage = findViewById(R.id.rateImage);
         //TextView
         txtField_result = findViewById(R.id.result);
         txtField_result.setText("0");
@@ -111,6 +117,7 @@ public class MainActivity extends AppCompatActivity {
         btn_eight.setOnClickListener(v -> setValueOnClick(btn_eight));
         btn_nine.setOnClickListener(v -> setValueOnClick(btn_nine));
         btn_zero.setOnClickListener(v -> setValueOnClick(btn_zero));
+
         /*реализация нажатия на знак*/
         btn_split.setOnClickListener(v -> setActionOnClick(btn_split));
         btn_multiply.setOnClickListener(v -> setActionOnClick(btn_multiply));
@@ -163,6 +170,10 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), R.string.toast_help_3, Toast.LENGTH_SHORT).show();
             }
         });
+        rateImage.setOnClickListener(v ->{
+            audio_btn.start();
+            openRateScreen();
+        });
 
 
     }
@@ -179,5 +190,12 @@ public class MainActivity extends AppCompatActivity {
         super.onRestoreInstanceState(instanceState);
         txtField_operation.setText(instanceState.getString("txt_operation"));
         txtField_result.setText(instanceState.getString("txt_result"));
+    }
+
+    private void openRateScreen(){
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("https://www.cbr.ru/currency_base/daily/"));
+        startActivity(intent);
+
     }
 }

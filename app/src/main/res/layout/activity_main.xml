@@ -16,6 +16,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         android:background="@drawable/sea_background">
 
+
+
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -224,6 +228,14 @@
                     style="@style/btn_green_zone"
                     android:layout_marginStart="@dimen/universal_margin"/>
             </LinearLayout>
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/rateImage"
+                android:layout_width="@dimen/icon_default"
+                android:layout_height="@dimen/icon_default"
+                android:background="@drawable/rate"
+                android:layout_gravity="center"/>
+
 
         </LinearLayout>
     </ScrollView>
