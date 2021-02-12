@@ -10,4 +10,5 @@
     <dimen name="text_size_result">32sp</dimen>
     <dimen name="text_size_operation">28sp</dimen>
     <dimen name="universal_margin">2dp</dimen>
+    <dimen name="icon_default">75dp</dimen>
 </resources>
