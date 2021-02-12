@@ -14,82 +14,72 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:background="@drawable/sea_background"
-       >
+        android:background="@drawable/sea_background">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="75dp"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp"
+            android:layout_marginTop="@dimen/margin_top_calc_vertical"
+            android:layout_marginLeft="@dimen/margin_left_right_calc_vertical"
+            android:layout_marginRight="@dimen/margin_left_right_calc_vertical"
             android:orientation="vertical">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/result"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/text_field"
                 android:gravity="end"
                 android:textColor="@color/black"
-                android:textSize="36sp"
-                android:textStyle="bold"
-                />
+                android:textSize="@dimen/text_size_result"
+                android:textStyle="bold"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/operations"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/text_field"
                 android:gravity="end"
                 android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:layout_marginTop="4dp"/>
+                android:textSize="@dimen/text_size_operation"
+                android:textStyle="bold"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_1"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     style="@style/btn_numbers"
-                    android:text="@string/_1"
-                    tools:ignore="ButtonStyle" />
-
-                <Button
+                    android:text="@string/_1"/>
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_2"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/_2"
                     style="@style/btn_numbers"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
-
-                <Button
+                    android:layout_marginStart="@dimen/universal_margin"/>
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_3"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/_3"
                     style="@style/btn_numbers"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
-
-                <Button
+                    android:layout_marginStart="@dimen/universal_margin"/>
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_split"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/split"
                     style="@style/btn_elements"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
+                    android:layout_marginStart="@dimen/universal_margin"/>
             </LinearLayout>
 
             <LinearLayout
@@ -97,44 +87,39 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_4"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/_4"
-                    style="@style/btn_numbers"
-                    tools:ignore="ButtonStyle" />
-
-                <Button
+                    style="@style/btn_numbers"/>
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_5"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     style="@style/btn_numbers"
                     android:text="@string/_5"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
+                    android:layout_marginStart="@dimen/universal_margin"/>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_6"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     style="@style/btn_numbers"
                     android:text="@string/_6"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
+                    android:layout_marginStart="@dimen/universal_margin"/>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_multiply"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/multiply"
                     style="@style/btn_elements"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
+                    android:layout_marginStart="@dimen/universal_margin"/>
 
             </LinearLayout>
 
@@ -143,44 +128,40 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_7"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/_7"
-                    style="@style/btn_numbers"
-                    tools:ignore="ButtonStyle" />
+                    style="@style/btn_numbers"/>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_8"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/_8"
                     style="@style/btn_numbers"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
+                    android:layout_marginStart="@dimen/universal_margin"/>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_9"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/_9"
                     style="@style/btn_numbers"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
+                    android:layout_marginStart="@dimen/universal_margin"/>
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_subtract"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/subtract"
                     style="@style/btn_elements"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
+                    android:layout_marginStart="@dimen/universal_margin"/>
 
             </LinearLayout>
 
@@ -189,37 +170,29 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_0"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="4"
+                    android:layout_weight="2"
                     android:text="@string/_0"
-                    style="@style/btn_numbers"
-                    tools:ignore="ButtonStyle" />
-
-                <Button
+                    style="@style/btn_numbers"/>
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_dot"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="@string/dot"
                     style="@style/btn_elements"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
-
-                <Button
+                    android:layout_marginStart="@dimen/universal_margin"/>
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_augment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/orange"
                     android:text="@string/augment"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
+                    style="@style/btn_elements"
+                    android:layout_marginStart="@dimen/universal_margin"/>
             </LinearLayout>
 
             <LinearLayout
@@ -227,43 +200,29 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_discard"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/red"
                     android:text="@string/discard"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
-                    tools:ignore="ButtonStyle" />
-
-                <Button
+                    style="@style/btn_red_zone"/>
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_delete"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:backgroundTint="@color/red"
                     android:text="@string/delete"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
-
-                <Button
+                    style="@style/btn_red_zone"
+                    android:layout_marginStart="@dimen/universal_margin"/>
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/btn_equally"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="4"
-                    android:backgroundTint="@color/green"
+                    android:layout_weight="1"
                     android:text="@string/equally"
-                    android:textColor="@color/black"
-                    android:textSize="28sp"
-                    android:textStyle="bold"
-                    tools:ignore="ButtonStyle"
-                    android:layout_marginStart="4dp"/>
+                    style="@style/btn_green_zone"
+                    android:layout_marginStart="@dimen/universal_margin"/>
             </LinearLayout>
 
         </LinearLayout>
